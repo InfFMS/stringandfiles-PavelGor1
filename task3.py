@@ -8,6 +8,7 @@
 # Убедитесь, что слова записаны в алфавитном порядке.
 with open('task3.txt','r', encoding='utf8') as f:
     l=f.read()
+    l=l.lower()
 for char in '.,!?;:"()[]{}':
     l = l.replace(char, '')
 l = l.split()
